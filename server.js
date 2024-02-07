@@ -27,14 +27,6 @@ app.get('/',(req,res)=>{
     res.send("Hello, this is your Node.js Server!");
 });
 
-// app.get('/api/data',(req,res)=>{
-//     const data = {
-//         message: 'Welcome to the API endpoint!',
-//         timestamp: new Date().toISOString() 
-//     };
-//     res.json(data);
-// })
-
 
 
 //Route to handle adding a new trip
@@ -102,21 +94,6 @@ app.post('/api/bookings', async(req,res)=>{
 });
 
 
-// // GET endpoint for retrieving trip details based on date
-// app.get('/api/trip/date', async (req, res) => {
-//     try {
-//         const { date } = req.params;
-
-//         const searchDate = new Date(date);
-
-//         const trips = await Trip.find({ date: searchDate });
-
-//         res.status(200).json({ trips });
-//     } catch (error) {
-//         console.error('Error retrieving trip details:', error);
-//         res.status(500).json({ error: 'Internal Server Error' });
-//     }
-// });
 
 
 // GET endpoint for retrieving trip details based on date
