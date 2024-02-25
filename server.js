@@ -32,6 +32,10 @@ app.get('/',(req,res)=>{
   res.send("Hello, this is your Node.js Server!");
 });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3bff6980d6812e4dd5457b7e6c1aa89745b596cb
 
 //Route to handle adding a new trip
 app.post('/api/trips', async(req,res)=>{
