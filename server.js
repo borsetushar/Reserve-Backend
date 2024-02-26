@@ -32,10 +32,9 @@ app.get('/',(req,res)=>{
   res.send("Hello, this is your Node.js Server!");
 });
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 3bff6980d6812e4dd5457b7e6c1aa89745b596cb
+
+
 
 //Route to handle adding a new trip
 app.post('/api/trips', async(req,res)=>{
@@ -50,6 +49,7 @@ app.post('/api/trips', async(req,res)=>{
       res.status(500).json({error: 'Internal Server Error'});
   }
 });
+
 
 
 
@@ -124,6 +124,8 @@ app.get('/api/trip/date', async (req, res)=>{
   }
 })
 
+
+
 // GET endpoint for retrieving trip details based on query
 app.get('/api/trip', async (req, res) => {
   try {
@@ -155,6 +157,7 @@ app.get('/api/trip', async (req, res) => {
 });
 
 
+//route for getting districts data
 app.get('/api/districts', async (req, res) => {
   try {
       // Connect to MongoDB
@@ -179,6 +182,8 @@ app.get('/api/districts', async (req, res) => {
   }
 });
 
+
+//API for Stripe payment gateaway
 app.post("/api/create-checkout-session", async (req, res) => {
 const { products } = req.body;
 console.log(products);
